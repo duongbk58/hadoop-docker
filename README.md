@@ -74,7 +74,7 @@ docker exec -it hadoop-master ~/hadoop/.start-master.sh
 2. Nifi (port: 9090)
 3. HDFS (port: 9870)
 4. Schema Registry (port: 19090)
-5. Debexium (port: 8083)
+5. Debezium (port: 8083)
 ```
 ### Register your connector
 Go co debezium script folder
