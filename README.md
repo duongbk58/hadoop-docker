@@ -41,7 +41,7 @@ but you can follow the instructions in Dockerfile as a guideline to install your
 git clone project_repo_url
 cd project_folder
 
-docker netwrok create hadoop
+docker network create hadoop
 docker volume create hivemetastore
 ./build-image.sh
 ``` 
@@ -70,7 +70,7 @@ docker exec -it hadoop-master ~/hadoop/.start-master.sh
 ```
 ### Access your service
 ```shell script
-1. Hue (port: 9090)
+1. Hue (port: 8000)
 2. Nifi (port: 9090)
 3. HDFS (port: 9870)
 4. Schema Registry (port: 19090)
