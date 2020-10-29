@@ -1,7 +1,7 @@
-##Apache Hadoop Cluster Docker Image
+## Apache Hadoop Cluster Docker Image
 It is just for practical or research purpose, do not use it in production environment
 but you can follow the instructions in Dockerfile as a guideline to install your own cluster. Hope you guys have a good playground
-###Supported OS
+### Supported OS
 ```shell script
 1. MacOS (tested)
 2. Linux (tested)
