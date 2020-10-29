@@ -1,0 +1,19 @@
+{
+    "name": "BikeStores-connector",
+    "config": {
+        "connector.class" : "io.debezium.connector.sqlserver.SqlServerConnector",
+        "tasks.max" : "1",
+        "key.converter": "org.apache.kafka.connect.json.JsonConverter",
+        "key.converter.schemas.enable": false,
+        "value.converter": "org.apache.kafka.connect.json.JsonConverter",
+        "value.converter.schemas.enable": false,
+        "database.server.name" : "server1",
+        "database.hostname" : "sqlserver",
+        "database.port" : "1433",
+        "database.user" : "sa",
+        "database.password" : "Abcd@1234",
+        "database.dbname" : "BikeStores",
+        "database.history.kafka.bootstrap.servers" : "hadoop-master:9092,hadoop-slave1:9092,hadoop-slave2:9092",
+        "database.history.kafka.topic": "schema-changes.BikeStores"
+    }
+}
